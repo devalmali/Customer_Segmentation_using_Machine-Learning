@@ -1,0 +1,40 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{authblk}
+\usepackage[margin=0.5in]{geometry}
+
+
+	
+	
+
+\title{Predicting Hospital Readmission Patterns of Diabetic Patients using Ensemble Model and Cluster Analysis}
+\author[1]{Hung N. Pham, Anurag Chatterjee, Balasubramanian Narasimhan, Choon Wee Lee, Diksha Kumari Jha, Edric Yeng Fai Wong, Stella Ellyanti, Quang H. Nguyen, Binh P. Nguyen, Matthew C.H. Chua, Jashwanth Kalyan Polavarapu}
+
+
+\begin{document}
+\maketitle
+\section{The main idea}
+
+This paper proposes an ensemble model to predict hospital readmission by selecting from a pool of 15 models comprised of Logistic Regression, Decision Trees, Neural Network, and Augmented Nave Bayes networks. 
+
+\section{The methodology }
+
+The dataset used in this study was obtained from the UCI machine learning repository, and it represents 10 years of clinical care at 130 US hospitals and integrated delivery networks from 1999 to 2008.
+Here, the methods used are 
+\begin{enumerate}
+\item Performance Metrics
+\item Predictive Modeling
+\item Cluster Analysis using k-Means
+\end{enumerate}
+
+
+
+\section{The results}
+ 
+The ensemble classification accuracy was 63.5\% on the 15\% test partition of the data, which was higher than the baseline. When compared to the baseline SVM model, the ensemble has comparable accuracy but higher sensitivity.  As higher sensitivity indicates that the model has a higher true positive rate, implying that it is better than the baseline model at predicting cases of re-admission.
+
+\section{Recommendation}
+
+The models were developed with a focus on the readmission of diabetic patients in the United States; however, the performance of these models in other geographies or for other chronic illness patterns, which have been shown to be dependent on different factors, has not been evaluated. In the future, we could train different prediction models, which could even be ensembles, to predict whether a patient is likely to be readmitted based on their membership in that cluster. 
+
+\end{document}

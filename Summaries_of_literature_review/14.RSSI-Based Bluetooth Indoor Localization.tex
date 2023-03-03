@@ -1,0 +1,32 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{authblk}
+\usepackage[margin=0.5in]{geometry}
+
+
+	
+	
+
+\title{RSSI-based Bluetooth Indoor Localization}
+\author[1]{Yixin Wang, Qiang Ye, Jie Cheng, Lei Wang, Jashwanth Kalyan Polavarapu}
+
+
+\begin{document}
+\maketitle
+\section{The main idea}
+
+The Global Positioning System (GPS) has been widely used to determine location for a variety of different applications. However, it does not work well in indoor environments because it requires a line of sight to the satellites and thus stops working when the line of sight is not available. Indoor localization has become an important research topic, attracting a lot of attention in the networking research community. Object localization is another important application. An object can be precisely localized using the localization capability. As a result, personal belongings can be safely safeguarded. If they become disoriented, their whereabouts can be easily determined.
+
+\section{The methodology }
+
+In this paper, they present two novel BLE-based localization schemes: Low-precision Indoor Localization (LIL) and High-precision Indoor Localization (HIL). LIL and HIL use the collected RSSI measurements to generate a small region where the object is guaranteed to be found. In many applications, a precise region that covers the ground truth location is more important than a rough estimate of the true position. HIL results in smaller localization regions than LIL. HIL, on the other hand, necessitates an additional data-training phase.
+
+\section{The results}
+ 
+LIL and HIL, two novel Bluetooth-based indoor localization methods, are presented in this paper. Both use RSSI measurements to generate a small area where the Bluetooth-enabled device is guaranteed to be found. Because of the additional data training phase, our experimental results show that HIL is more accurate than LIL in most scenarios.
+
+\section{Recommendation}
+
+If we take training data that is feasible we can get better scheme with High-precision Indoor Localization (HIL) is a more appropriate scheme than Low-precision Indoor Localization (LIL). 
+
+\end{document}

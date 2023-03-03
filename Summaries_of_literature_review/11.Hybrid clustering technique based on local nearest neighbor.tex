@@ -1,0 +1,42 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{authblk}
+\usepackage[margin=0.5in]{geometry}
+
+
+	
+	
+
+\title{A fast hybrid clustering technique based on local nearest neighbor using minimum spanning tree}
+\author[1]{Gaurav Mishra, Sraban Kumar Mohanty, Tirumalesh Reddy Neelapu}
+
+
+\begin{document}
+\maketitle
+\section{The main idea}
+
+Most of the existing clustering algorithms become ineffective when inappropriate parameters are provided or applied on a dataset which consists of clusters of diverse shapes, sizes, and varying densities. To overcome such issues, graph-based hybrid clustering algorithms have been proposed. Researchers proposed a fast hybrid clustering technique based on local nearest neighbor using minimum spanning tree to reduce the computational overhead. Moreover, this algorithm does not require any user defined parameters and it can estimate the number of clusters more accurately.
+
+\section{The methodology }
+
+In this case study, reasearchers employed the divide-and-conquer technique to identify the actual clusters with improved efficiency. 
+\begin{enumerate}
+\item Divide Step:
+	For the given dataset of N data points, the dispersion level of data points is used to partition the dataset into sub-clusters.
+
+\item Conquer Step:
+	Minimum Spanning tree algorithm like Prim’s or Kruskals can be used to construct the MST for each of the sub-clusters obtained from the Divide Step.
+
+\item Combine Step:
+	The Obtained sub-clusters are merged into actual clusters based on cohesion and intra similarity.
+\end{enumerate}
+
+\section{The results}
+ 
+Proposed algorithm is tested on 7 different datasets with number of clusters ranging from 2 to 8. And compared against other clustering algorithms like K-means, Hierarchical, DBSCAN, DMST, SAM and outperforms with all datasets. Also, the execution times were plotted comparing all the clustering algorithms and the proposed algorithm with MST proved to be executing in the least time comparing to every other algorithm.
+
+\section{Recommendation}
+
+Data preprocessing techniques were not used before applying the clustering algorithms. Removing the extreme outliers and other preprocessing techniques helps the model to cluster more accurately.
+
+\end{document}
